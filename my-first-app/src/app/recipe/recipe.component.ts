@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipe.component.css']
 })
 export class RecipeComponent {
-
+  name: string = 'Lemonade';
+  ingredients: string[] = ['Lemon', 'Water', 'Sugar'];
 }
