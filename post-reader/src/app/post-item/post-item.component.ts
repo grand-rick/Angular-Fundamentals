@@ -14,7 +14,7 @@ export class PostItemComponent implements OnInit{
       id: 0,
       title: '',
       body: '',
-      votes: ''
+      votes: 0
     }
   }
 

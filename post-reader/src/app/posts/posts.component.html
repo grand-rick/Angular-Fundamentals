@@ -1,6 +1,8 @@
 <h1 [ngStyle]="{'font-size': '50px'}">{{title}}</h1>
-<ul *ngFor="let post of posts">
+<!-- <ul *ngFor="let post of posts">
     <li>{{post.title}}</li>
     <li>{{post.body}}</li>
     <li>Votes: {{post.votes}}</li>
-</ul>
+</ul> -->
+
+<app-post-item *ngFor="let post of posts" [post]="post"></app-post-item>
