@@ -1,1 +1,9 @@
-<p>zoo works!</p>
+<h1>THE ZOO</h1>
+<ul *ngFor="let animal of animalList">
+    <li>Name: {{animal.name}}</li>
+    <li>
+        Is the {{animal.name}} fed ?: 
+        <span *ngIf="animal.fed === true">Yes</span>
+        <span *ngIf="animal.fed === false">No</span>
+    </li>
+</ul>
