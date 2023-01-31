@@ -7,6 +7,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { AboutComponent } from './about/about.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { ZooComponent } from './zoo/zoo.component';
+import { ZooAnimalComponent } from './zoo-animal/zoo-animal.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ZooComponent } from './zoo/zoo.component';
     PhotosComponent,
     AboutComponent,
     RecipeComponent,
-    ZooComponent
+    ZooComponent,
+    ZooAnimalComponent
   ],
   imports: [
     BrowserModule,
