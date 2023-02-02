@@ -8,4 +8,4 @@
     </li>
 </ul> -->
 
-<app-zoo-animal *ngFor="let animal of animalList" [animal]="animal"></app-zoo-animal>
+<app-zoo-animal *ngFor="let animal of animalList" [animal]="animal" (liked)="liked($event)"></app-zoo-animal>
