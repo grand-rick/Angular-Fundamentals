@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmmiter} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { Post } from '../models/Post';
 
 @Component({
@@ -8,7 +8,7 @@ import { Post } from '../models/Post';
 })
 export class PostItemComponent implements OnInit{
   @Input() post: Post;
-  @Output() hidePost: EventEmitter<Post> = new EventEmmiter;
+  @Output() hidePost: EventEmitter<Post> = new EventEmitter;
 
   constructor () {
     this.post = {
