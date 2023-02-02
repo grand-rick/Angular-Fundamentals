@@ -30,4 +30,8 @@ export class ZooComponent implements OnInit{
       }
     ]
   }
+
+  liked(animal: Animal): void {
+    alert(`I like the ${animal.name}`);
+  }
 }
