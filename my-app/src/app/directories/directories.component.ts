@@ -8,8 +8,8 @@ import { Link } from '../models/Link';
   templateUrl: './directories.component.html',
   styleUrls: ['./directories.component.css']
 })
-export class DirectoryComponent implements OnInit {
-  linkList: object[] = [];
+export class DirectoriesComponent implements OnInit {
+  linkList: Link[] = [];
 
   // Inject your Bookmark service into the constructor below
   constructor(private linkService: LinkService, private bookmark: BookmarkService) { }

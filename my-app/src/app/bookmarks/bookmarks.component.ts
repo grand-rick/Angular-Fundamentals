@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BookmarkService } from '../services/bookmark.service';
+import { Link } from '../models/Link';
 
 @Component({
   selector: 'app-bookmarks',
@@ -7,7 +8,7 @@ import { BookmarkService } from '../services/bookmark.service';
   styleUrls: ['./bookmarks.component.css']
 })
 export class BookmarksComponent implements OnInit {
-  bookmarkList: object[] = [];
+  bookmarkList: Link[] = [];
 
   // Inject the Bookmark service into the constructor below
   constructor(private bookmarkService: BookmarkService) { }

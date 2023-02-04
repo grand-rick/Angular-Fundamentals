@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Link } from '../models/Link';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ export class LinkService {
 
   constructor() { }
 
-  getLinks(): object[] {
+  getLinks(): Link[] {
     return [
       {
         id: 1,
