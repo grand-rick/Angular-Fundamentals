@@ -21,7 +21,7 @@ export class DirectoriesComponent implements OnInit {
   addToBookmarks(link: Link): void {
     // Invoke addToBookmarks() from the Bookmark service below
     this.bookmark.addToBookmarks(link);
-    alert("Added!");
+    alert(`Added ${link.name}!`);
   }
 
 }
