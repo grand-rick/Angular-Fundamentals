@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { LinkService } from '../services/link.service'
-import { BookmarkService } from '../services/bookmark.service'
+import { LinkService } from '../services/link.service';
+import { BookmarkService } from '../services/bookmark.service';
+import { Link } from '../models/Link';
 
 @Component({
   selector: 'app-directories',
@@ -11,15 +12,15 @@ export class DirectoryComponent implements OnInit {
   linkList: object[] = [];
 
   // Inject your Bookmark service into the constructor below
-  constructor(private linkService: LinkService) { }
+  constructor(private linkService: LinkService, private bookmark: BookmarkService) { }
 
   ngOnInit(): void {
     this.linkList = this.linkService.getLinks();
   }
 
-  addToBookmarks(bookmark: BookmarkService): void {
+  addToBookmarks(link: Link): void {
     // Invoke addToBookmarks() from the Bookmark service below
-    bookmark.addToBookmarks();
+    this.bookmark.addToBookmarks(link);
     alert("Added!");
   }
 
