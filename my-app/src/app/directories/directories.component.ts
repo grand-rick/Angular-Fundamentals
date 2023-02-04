@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LinkService } from '../services/link.service'
-// Import your Bookmark service here
+import { BookmarkService } from '../services/bookmark.service'
 
 @Component({
   selector: 'app-directories',
@@ -17,9 +17,9 @@ export class DirectoryComponent implements OnInit {
     this.linkList = this.linkService.getLinks();
   }
 
-  addToBookmarks(bookmark): void {
+  addToBookmarks(bookmark: BookmarkService): void {
     // Invoke addToBookmarks() from the Bookmark service below
-
+    bookmark.addToBookmarks();
     alert("Added!");
   }
 
