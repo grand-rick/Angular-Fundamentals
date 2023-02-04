@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
-import { DirectoryComponent } from './directories/directories.component';
+import { DirectoriesComponent } from './directories/directories.component';
 
 const routes: Routes = [
-  {path: '', component: DirectoryComponent},
+  {path: '', component: DirectoriesComponent},
   {path: 'bookmarks', component: BookmarksComponent}
 ];
 
