@@ -1,1 +1,15 @@
-<p>directories works!</p>
+<h1>Useful Links for Angular</h1>
+
+<a routerLink="/bookmarks">See my bookmarks</a>
+
+<ul>
+  <li *ngFor="let link of linkList">
+    <a href="{{ link.url }}">{{ link.name }}</a>
+    <!-- 
+      Edit the button below to:
+      - Listen for a click event, which...
+      - ...adds the link as a bookmark
+     -->
+    <button>Add to bookmarks</button>
+  </li>
+</ul>

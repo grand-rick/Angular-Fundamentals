@@ -1,1 +1,15 @@
-<p>bookmarks works!</p>
+<h1>My Bookmarked Links</h1>
+<a routerLink="/">Back to the directory</a>
+
+<ul>
+  <li *ngFor="let bookmark of bookmarkList">
+    <a href="{{ bookmark.url }}">{{ bookmark.name }}</a>
+  </li>
+</ul>
+
+<!-- 
+  Edit the button below to:
+  - Listen for a click event which...
+  - ...invokes the function to clear the entire bookmarks list
+-->
+<button>Reset list of bookmarks</button>
