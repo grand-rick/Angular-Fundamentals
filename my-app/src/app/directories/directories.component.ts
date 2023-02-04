@@ -3,9 +3,9 @@ import { LinkService } from '../services/link.service'
 // Import your Bookmark service here
 
 @Component({
-  selector: 'app-directory',
-  templateUrl: './directory.component.html',
-  styleUrls: ['./directory.component.css']
+  selector: 'app-directories',
+  templateUrl: './directories.component.html',
+  styleUrls: ['./directories.component.css']
 })
 export class DirectoryComponent implements OnInit {
   linkList: object[] = [];
