@@ -9,6 +9,8 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { ZooComponent } from './zoo/zoo.component';
 import { ZooAnimalComponent } from './zoo-animal/zoo-animal.component';
 import { LinksComponent } from './links/links.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { LinksComponent } from './links/links.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
