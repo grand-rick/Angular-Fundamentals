@@ -8,6 +8,7 @@ import { PostItemComponent } from './post-item/post-item.component';
 import { HistoryComponent } from './history/history.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CreatePostComponent } from './create-post/create-post.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     PostsComponent,
     PostItemComponent,
     HistoryComponent,
-    NavbarComponent
+    NavbarComponent,
+    CreatePostComponent
   ],
   imports: [
     BrowserModule,
