@@ -1,1 +1,8 @@
-<p>create-post works!</p>
+<form>
+    <h1>Create a Post</h1>
+    <input type="text" name="title" placeholder="Enter Post title" [(ngModel)]="title" />
+    <br />
+    <textarea name="body" placeholder="Enter post body" [(ngModel)]="body"></textarea>
+    <br />
+    <input type="submit" value="Submit" class="btn btn-primary" />
+</form>
