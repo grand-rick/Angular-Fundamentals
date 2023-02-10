@@ -20,7 +20,8 @@ export class CreatePostComponent implements OnInit {
   submitForm(): void {
     const post = {
       title: this.title,
-      body: this.body
+      body: this.body,
+      votes: 1
     }
 
     this.addPost.emit(post);
