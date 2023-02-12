@@ -16,7 +16,7 @@ export class PostsComponent implements OnInit {
     this.postService.getPosts().subscribe(res => {
       for (let index = 0; index < res.length; index++) {
         const post = res[index];
-        post["votes"] = 1;
+        post["votes"] = 0;
       }
 
       this.posts = res;
