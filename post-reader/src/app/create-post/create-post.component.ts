@@ -21,7 +21,7 @@ export class CreatePostComponent implements OnInit {
     const post = {
       title: this.title,
       body: this.body,
-      votes: 1
+      votes: 0
     }
 
     this.addPost.emit(post);
