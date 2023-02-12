@@ -17,6 +17,8 @@ export class SignInComponent implements OnInit{
 
   onSubmit(): void {
     alert('Has successfully signed in');
+    this.username = '';
+    this.password = '';
   }
 
 }
