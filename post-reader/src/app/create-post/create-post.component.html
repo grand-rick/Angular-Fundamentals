@@ -1,8 +1,8 @@
-<form (ngSubmit)="submitForm()">
+<form #form="ngForm" (ngSubmit)="submitForm()">
     <h1>Create a Post</h1>
-    <input type="text" name="title" placeholder="Enter Post title" [(ngModel)]="title" />
+    <input type="text" name="title" placeholder="Enter Post title" required minlength="8" maxlength="32" [(ngModel)]="title" />
     <br />
-    <textarea name="body" placeholder="Enter post body" [(ngModel)]="body"></textarea>
+    <textarea name="body" placeholder="Enter post body" required minlength="16" [(ngModel)]="body"></textarea>
     <br />
-    <input type="submit" value="Submit" class="btn btn-primary" />
+    <input type="submit" [disabled]="form.invalid" value="Submit" class="btn btn-primary" />
 </form>
