@@ -1,1 +1,5 @@
-<p>product-list works!</p>
+<ul *ngFor="let product of myProducts">
+    <li>{{product.name}} - {{product.price}}</li>
+    <li>{{product.description}}</li>
+</ul>
+<br />
