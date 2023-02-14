@@ -1,5 +1,9 @@
-<ul *ngFor="let product of myProducts">
-    <li>{{product.name}} - {{product.price}}</li>
-    <li>{{product.description}}</li>
-</ul>
-<br />
+<div class="">
+    <div class="">
+        <div *ngFor="let product of myProducts">
+            <img src={{product.url}} alt="Product" srcset="">
+            {{product.name}} - {{product.price}}
+            <p>{{product.description}}</p>
+        </div>
+    </div>
+</div>

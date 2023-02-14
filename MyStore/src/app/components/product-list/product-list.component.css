@@ -4,9 +4,15 @@
     justify-content: space-between;
     max-width: 1024px;
     margin-bottom: 64px;
+    padding: 15px;
+    background-color: aqua;
   }
   
 .product-container {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
+    background-color: sandybrown;
+    color: black;
+    padding: 10px;
+    margin: 10px;
 }
