@@ -1,9 +1,3 @@
 <div class="">
-    <div class="">
-        <div *ngFor="let product of myProducts">
-            <img src={{product.url}} alt="Product" srcset="">
-            {{product.name}} - {{product.price}}
-            <p>{{product.description}}</p>
-        </div>
-    </div>
+    <app-product-item *ngFor="let product of myProducts" [product]="product"></app-product-item>
 </div>
