@@ -7,7 +7,11 @@ import { Product } from '../../models/Product';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent implements OnInit {
-  @Input() product: Product;;
+  @Input() product: Product;
+
+  items: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  showDetails: boolean = false;
 
   constructor () {
     this.product = {
@@ -19,7 +23,6 @@ export class ProductItemComponent implements OnInit {
     }
 }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
 
-  }
 }
