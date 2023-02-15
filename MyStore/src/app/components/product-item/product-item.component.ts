@@ -10,7 +10,7 @@ import { ProductsService } from 'src/app/services/products.service';
 export class ProductItemComponent implements OnInit {
   @Input() product: Product;
 
-  items: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  items: number[] = [];
 
   constructor (private productsService: ProductsService) {
     this.product = {
@@ -22,7 +22,9 @@ export class ProductItemComponent implements OnInit {
     }
 }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.items = this.productsService.getNumberOfProducts();
+  }
 
   // I set the current product using the ProductsService to allow sharing of data with the ProductItemDetail component
   setProduct(product: Product) {
