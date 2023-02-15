@@ -9,6 +9,7 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 export class ProductItemDetailComponent implements OnInit {
   product: Product;
+  items: number[] = [];
 
   constructor (private productsService: ProductsService) {
     this.product = {
@@ -22,6 +23,7 @@ export class ProductItemDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.product = this.productsService.getCurrentProduct();
+    this.items = this.productsService.getNumberOfProducts();
   }
 
 
