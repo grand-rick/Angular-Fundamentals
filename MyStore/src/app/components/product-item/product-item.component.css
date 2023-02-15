@@ -1,3 +1,8 @@
+.product-item {
+    text-align: center;
+    border: 3.5px #182848 solid;
+}
+
 img {
     width: 320px;
 }
