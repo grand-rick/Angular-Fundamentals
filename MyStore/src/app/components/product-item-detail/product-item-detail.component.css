@@ -1,8 +1,8 @@
 .product-item-detail {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
 
 }
 
