@@ -34,4 +34,8 @@ export class ProductsService {
   getCurrentProduct(): Product {
     return this.currentProduct;
   }
+
+  getNumberOfProducts(): number[] {
+    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  }
 }
