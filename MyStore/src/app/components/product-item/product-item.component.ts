@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Product } from '../../models/Product';
+import { Product } from 'src/app/models/Product';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-product-item',
@@ -11,9 +12,7 @@ export class ProductItemComponent implements OnInit {
 
   items: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-  showDetails: boolean = false;
-
-  constructor () {
+  constructor (private productsService: ProductsService) {
     this.product = {
       id: 0,
       name: '',
@@ -24,5 +23,10 @@ export class ProductItemComponent implements OnInit {
 }
 
   ngOnInit(): void {}
+
+  // I set the current product using the ProductsService to allow sharing of data with the ProductItemDetail component
+  setProduct(product: Product) {
+    this.productsService.setCurrentProduct(product);
+  }
 
 }
