@@ -13,9 +13,7 @@ export class CreatePostComponent implements OnInit {
 
   constructor () {}
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   submitForm(): void {
     const post = {
