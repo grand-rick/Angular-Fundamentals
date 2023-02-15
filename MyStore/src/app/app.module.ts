@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductItemDetailComponent } from './components/product-item-detail/product-item-detail.component';
@@ -16,7 +15,6 @@ import { ProductItemDetailComponent } from './components/product-item-detail/pro
     AppComponent,
     ProductListComponent,
     NavBarComponent,
-    ProductDetailsComponent,
     ProductItemComponent,
     CartComponent,
     ProductItemDetailComponent
